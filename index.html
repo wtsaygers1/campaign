@@ -37,66 +37,117 @@
         <!-- puts in a dark border around the row -->
         <div class="row align-items-start border border-dark text-center">
             <div class="col">
-                SHELBY FOR THE WORKING FAMILY
+                <h1>SHELBY FOR THE WORKING FAMILY</h1>
             </div>
         </div>
         <!-- here is where the main political image will go -->
+        <!-- how to put in a background image or fill the background-color to get rid of all the white space when the viewport
+        is larger-->
         <div class="row border border-success">
-            <div class="col text-center">
+            <div class="col text-center bg-success">
                 <img src="./img/shelby-main.jpg" class="img-fluid" alt="Thomas Shelby">
             </div>
         </div>
         <!-- an accordion component under the image to share main political ideas -->
-        <div class="accordion accordion-flush border border-danger" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Best Style Guides for Men, Women, and Children
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <!-- I'm fine with the empty space in the mobile version as it doesn't seem to distracting but when the  -->
+        <div class="row border border-dark">
+            <div class="col-12 border border-3">
+                <div class="accordion accordion-flush border border-1" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Style
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate
+                                the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Loyalty
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate
+                            the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                            imagine
+                            this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Baby Blues
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate
+                            the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                            more
+                            exciting happening here in terms of content, but just filling up the space to make it look,
+                            at
+                            least at first glance, a bit more representative of how this would look in a real-world
+                            application.</div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Unyeilding Loyalty
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Gypsy Witchcraft
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
-                </div>
+            <!-- here is the table: I want this in the mobile view to be under the accordion but as
+            the viewport gets larger for the accordion and table to be in the same row but
+            separate columns-->
+            <!-- look into the capabilities of Display under Utilities **checkout changing the size of the viewport and the
+            table disappers for small and medium viewports-->
+            <div class="col-12 border border-3 d-sm-none d-lg-block">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+
     </div>
     <!-- this container will include the carousel of images, icons, and a submission
     form for concerned constituents/citizens -->
     <div class="container-fluid">
-        <!-- the first thing will be the two carousels -->
         <!-- I am thinking one row with two different columns each containing a carousel -->
         <div class="row">
             <!-- this is where the first carousel goes -->
@@ -113,7 +164,8 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <!-- img is not appearing on page/needed to refresh the page: I closed my computer
-                            and not sure if this caused that issue to arise --> <img src="./img/shelby-delegation.jpeg"
+                            and not sure if this caused that issue to arise --> 
+                            <img src="./img/shelby-delegation.jpeg"
                                 class="d-block w-100 rounded-pill" alt="delegation">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
