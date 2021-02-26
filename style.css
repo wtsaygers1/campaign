@@ -1,0 +1,5 @@
+/* This is needed to allow the scrollspy to work */
+/* Checkout the rules of scrollspy under components on the Bootstrap site */
+body {
+    position: relative;
+}
