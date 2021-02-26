@@ -9,13 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./style.css">
     <title>Shelby Campaign Website</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
     <!-- places navbar at the top of the page *stretch goal would be to fix it to top -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Thomas Shelby</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -24,8 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                    <a class="nav-link" href="#">Business</a>
+<!-- The <a> elements in About and Business need the href #About and #Business to point to the specific
+    id where you want the scroll to occur -->
+                    <a class="nav-link active" aria-current="page" href="#About">About</a>
+                    <a class="nav-link" href="#Business">Business</a>
                     <a class="nav-link" href="#">Family</a>
                     <a class="nav-link" href="#">Charity</a>
                 </div>
@@ -79,7 +81,8 @@
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            All I request is do everything I ask without any questions!
+                            Give me your vote and I'll do the rest! <br>
+                            VOTE Nov 6<sup>th</sup>
                         </div>
                     </div>
                 </div>
@@ -233,7 +236,9 @@
             </div>
         </div>
         <!-- this row will contain a submission form for issues -->
-        <div class="row border border-dark border border-5">
+        <!-- within the top <div> added the id that matches the href so that when an event
+            (in this case a click) occurs the code knows where to scroll -->
+        <div class="row border border-dark border border-5" id="Business">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -245,7 +250,10 @@
             </div>
         </div>
         <!-- there are current icons available but I didn't see them til later -->
-        <div class="row">
+        <!-- the id here acts in the same manner as above -->
+        <!-- something I noticed was that I could not put the id="About in the <div> about b/c I believe
+            you cannot have two id's since they are more specific than a class??" -->
+        <div class="row" id="About">
             <div class="min-vw-50 text-center">
                 <img src="./icons/award-fill.svg" alt="awards">
                 <img src="./icons/camera.svg" alt="camera">
